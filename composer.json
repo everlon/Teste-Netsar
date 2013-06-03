@@ -1,0 +1,11 @@
+{
+	"config":
+    {
+        "vendor-dir": "application/libraries"
+    }
+
+    ,"require":
+    {
+        "alexandresalome/php-webdriver": "dev-master"
+    }
+}
