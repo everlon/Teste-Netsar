@@ -24,15 +24,15 @@ class Nav_auto extends CI_Controller
 
         # Abrir página
         $browser      = WebDriver\Browser::create('firefox', 'http://localhost:4444/wd/hub');
-        $browser->open('http://labs.netsarnetwork.com.br/login.php');
+        $browser->open('http://NOMEDODOMINIO.com.br/login.php');
 
         # Definir o Campo de Usuário
         $input = $browser->element(WebDriver\By::css('#login')); 
-        $input->type('luiscrs');
+        $input->type('USUARIO');
 
         # Definir o Campo de Senha
         $input = $browser->element(WebDriver\By::css('#password'));
-        $input->type('luiscrs321');
+        $input->type('SENHA');
 
         # Clicar no botão de login
         $browser->element(WebDriver\By::xpath("//img[@onclick='fullwin(); Formulario.submit()']"))->click();
